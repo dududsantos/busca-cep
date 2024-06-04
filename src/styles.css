@@ -33,6 +33,7 @@
 
 .input input::placeholder {
   color: #fff;
+  font-size: 15px;
 }
 
 .button {
