@@ -8,9 +8,83 @@
 }
 
 .title {
-  font-size: 70px;
+  font-size: 66px;
   color: #fff;
   animation: grow 2s;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  margin: 34px 0;
+  display: flex;
+  border-radius: 6px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.input input {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+  margin-right: 8px;
+}
+
+.input input::placeholder {
+  color: #fff;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  //tansition: ease-in-out 0.2s;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 500px;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.main h2 {
+  margin: 14px 0;
+  font-size: 30px;
+}
+
+.main span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .main {
+    width: 80%;
+    min-height: 250px;
+  }
+
+  .main h2 {
+    font-size: 26px;
+  }
 }
 
 @keyframes grow {

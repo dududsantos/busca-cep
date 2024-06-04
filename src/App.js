@@ -8,7 +8,7 @@ function App() {
 
       <div className="input">
         <input type="text" placeholder="Digite o CEP" />
-        <button>
+        <button className="button">
           <FiSearch size={24} color="#FFF" />
         </button>
       </div>
