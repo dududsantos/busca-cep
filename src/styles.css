@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(90deg, #7159c1, #ab59c1);
+}
+
+.title {
+  font-size: 70px;
+  color: #fff;
+  animation: grow 2s;
+}
+
+@keyframes grow {
+  /* animation */
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
